@@ -14,83 +14,83 @@
 
 	<package name="icloud" namespace="/" extends="struts-default">
 
-		<action name="requestin" class="cn.zju.action.LoginAction"
+		<action name="requestin" class="zhning.action.LoginAction"
 			method="execute">
 			<result name="success">/WEB-INF/jsp/login.jsp</result>
 		</action>
 
-		<action name="requestup" class="cn.zju.action.LogupAction"
+		<action name="requestup" class="zhning.action.LogupAction"
 			method="execute">
 			<result name="success">/WEB-INF/jsp/logup.jsp</result>
 		</action>
 
-		<action name="requestout" class="cn.zju.action.LogoutAction"
+		<action name="requestout" class="zhning.action.LogoutAction"
 			method="execute">
 			<result name="success">/index.jsp</result>
 		</action>
 
-		<action name="autologin" class="cn.zju.action.AutoLoginAction"
+		<action name="autologin" class="zhning.action.AutoLoginAction"
 			method="autoLogin">
 			<result type="chain" name="success">searchUserfile</result>
 			<result type="redirect" name="input">${pageContext.request.contextPath}/requestin.action
 			</result>
 		</action>
 
-		<action name="searchUserfile" class="cn.zju.action.SearchUserFileAction"
+		<action name="searchUserfile" class="zhning.action.SearchUserFileAction"
 			method="execute">
 			<result name="success">/WEB-INF/jsp/userhome.jsp</result>
 			<result name="input">/index.jsp</result>
 		</action>
 
-		<action name="searchfile" class="cn.zju.action.SearchFileAction"
+		<action name="searchfile" class="zhning.action.SearchFileAction"
 			method="execute">
 			<result name="success">/WEB-INF/jsp/showsearchfiles.jsp</result>
 			<result name="input">/index.jsp</result>
 		</action>
 
-		<action name="listfiles" class="cn.zju.action.SearchFileAction"
+		<action name="listfiles" class="zhning.action.SearchFileAction"
 			method="listFiles">
 			<result name="success">/WEB-INF/jsp/showsearchfiles.jsp</result>
 			<result name="input">/index.jsp</result>
 		</action>
 
-		<action name="logup" class="cn.zju.action.LogupAction" method="logup">
+		<action name="logup" class="zhning.action.LogupAction" method="logup">
 			<result type="redirect" name="success">${pageContext.request.contextPath}/requestin.action</result>
 			<result name="error">/WEB-INF/jsp/400.html</result>
 			<result name="input">/WEB-INF/jsp/400.html</result>
 		</action>
 
-		<action name="login" class="cn.zju.action.LoginAction" method="login">
+		<action name="login" class="zhning.action.LoginAction" method="login">
 			<result type="chain" name="success">searchUserfile</result>
 			<result name="error">/message.jsp</result>
 			<result name="input">/WEB-INF/jsp/login.jsp</result>
 		</action>
 
-		<action name="download" class="cn.zju.action.DownloadAction"
+		<action name="download" class="zhning.action.DownloadAction"
 			method="download">
 			<result name="success">/message.jsp</result>
 			<result name="input">/message.jsp</result>
 		</action>
 
-		<action name="upload" class="cn.zju.action.UploadAction"
+		<action name="upload" class="zhning.action.UploadAction"
 			method="upload">
 			<result type="chain" name="success">searchUserfile</result>
 			<result name="error">/message.jsp</result>
 		</action>
 
-		<action name="changefilestatus" class="cn.zju.action.ChangeFileStatusAction"
+		<action name="changefilestatus" class="zhning.action.ChangeFileStatusAction"
 			method="changeFileStatus">
 			<result type="chain" name="success">searchUserfile</result>
 			<result name="input">/message.jsp</result>
 		</action>
 
-		<action name="deletefile" class="cn.zju.action.DeleteFileAction"
+		<action name="deletefile" class="zhning.action.DeleteFileAction"
 			method="deleteFile">
 			<result type="chain" name="success">searchUserfile</result>
 			<result name="error">/message.jsp</result>
 		</action>
 
-		<action name="shutdown" class="cn.zju.action.ShutDown">
+		<action name="shutdown" class="zhning.action.ShutDown">
 			<result name="success">/index.jsp</result>
 		</action>
 

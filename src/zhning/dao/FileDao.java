@@ -1,14 +1,14 @@
-package cn.zju.dao;
+package zhning.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import cn.zju.action.ChangeFileStatusAction;
-import cn.zju.action.SearchFileAction;
-import cn.zju.action.SearchUserFileAction;
-import cn.zju.dao.mapper.FileMapper;
-import cn.zju.dao.po.File;
+import zhning.action.ChangeFileStatusAction;
+import zhning.action.SearchFileAction;
+import zhning.action.SearchUserFileAction;
+import zhning.dao.mapper.FileMapper;
+import zhning.dao.po.File;
 
 public class FileDao {
 

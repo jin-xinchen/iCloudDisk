@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.File;
 import java.io.Serializable;
@@ -10,7 +10,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import cn.zju.service.FileService;
+import zhning.service.FileService;
  
 public class DeleteFileAction extends ActionSupport implements Serializable{
 	

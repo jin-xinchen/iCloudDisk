@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import cn.zju.service.FileService;
+import zhning.service.FileService;
 
 public class DownloadAction extends ActionSupport implements Serializable{
 	

@@ -1,4 +1,4 @@
-package cn.zju.dao.po;
+package zhning.dao.po;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

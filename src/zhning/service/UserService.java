@@ -1,11 +1,11 @@
-package cn.zju.service;
+package zhning.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import cn.zju.dao.mapper.UserMapper;
-import cn.zju.dao.po.User;
+import zhning.dao.mapper.UserMapper;
+import zhning.dao.po.User;
 
 @Service(value="userService")
 public class UserService {

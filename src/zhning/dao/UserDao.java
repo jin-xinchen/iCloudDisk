@@ -1,9 +1,9 @@
-package cn.zju.dao;
+package zhning.dao;
 
 import org.apache.ibatis.session.SqlSession;
 
-import cn.zju.dao.mapper.UserMapper;
-import cn.zju.dao.po.User;
+import zhning.dao.mapper.UserMapper;
+import zhning.dao.po.User;
 
 public class UserDao {
      //创建用户

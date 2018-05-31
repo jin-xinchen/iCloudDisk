@@ -1,11 +1,11 @@
-package cn.zju.dao.mapper;
+package zhning.dao.mapper;
 
 import java.util.List;
 
-import cn.zju.action.ChangeFileStatusAction;
-import cn.zju.action.SearchFileAction;
-import cn.zju.action.SearchUserFileAction;
-import cn.zju.dao.po.File;
+import zhning.action.ChangeFileStatusAction;
+import zhning.action.SearchFileAction;
+import zhning.action.SearchUserFileAction;
+import zhning.dao.po.File;
 
 public interface FileMapper {
 	

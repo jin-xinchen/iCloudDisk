@@ -1,15 +1,15 @@
-package cn.zju.service;
+package zhning.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import cn.zju.action.ChangeFileStatusAction;
-import cn.zju.action.SearchFileAction;
-import cn.zju.action.SearchUserFileAction;
-import cn.zju.dao.mapper.FileMapper;
-import cn.zju.dao.po.File;
+import zhning.action.ChangeFileStatusAction;
+import zhning.action.SearchFileAction;
+import zhning.action.SearchUserFileAction;
+import zhning.dao.mapper.FileMapper;
+import zhning.dao.po.File;
 
 @Service(value="fileService")
 public class FileService {

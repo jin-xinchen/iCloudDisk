@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.Serializable;
 import org.apache.struts2.ServletActionContext;

@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,8 +12,8 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import cn.zju.service.FileService;
-import cn.zju.service.UserService;
+import zhning.service.FileService;
+import zhning.service.UserService;
 
 public class UploadAction extends ActionSupport implements Serializable{
 	
@@ -31,9 +31,9 @@ public class UploadAction extends ActionSupport implements Serializable{
 	private FileService fileService; 
 	private UserService userService; 
 	
-	private cn.zju.dao.po.File f ;
+	private zhning.dao.po.File f ;
 	
-	public void setF(cn.zju.dao.po.File f) {
+	public void setF(zhning.dao.po.File f) {
 		this.f = f;
 	}
 	public void setFileService(FileService fileService) {

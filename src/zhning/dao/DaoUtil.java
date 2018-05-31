@@ -1,4 +1,4 @@
-package cn.zju.dao;
+package zhning.dao;
 
 import java.io.IOException;
 import java.io.InputStream;

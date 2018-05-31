@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.File;
 import java.io.Serializable;
@@ -9,9 +9,9 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import cn.zju.dao.po.User;
-import cn.zju.service.FileService;
-import cn.zju.service.UserService;
+import zhning.dao.po.User;
+import zhning.service.FileService;
+import zhning.service.UserService;
 
 public class LogupAction extends ActionSupport implements Serializable {
 

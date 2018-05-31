@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.Serializable;
 import java.util.List;
@@ -10,9 +10,9 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import cn.zju.dao.po.File;
-import cn.zju.dao.po.PageBean;
-import cn.zju.service.FileService;
+import zhning.dao.po.File;
+import zhning.dao.po.PageBean;
+import zhning.service.FileService;
 
 public class SearchFileAction extends ActionSupport implements Serializable {
 	

@@ -1,4 +1,4 @@
-package cn.zju.action;
+package zhning.action;
 
 import java.io.Serializable;
 
@@ -7,8 +7,8 @@ import org.apache.struts2.ServletActionContext;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import cn.zju.dao.po.User;
-import cn.zju.service.UserService;
+import zhning.dao.po.User;
+import zhning.service.UserService;
 
 public class LoginAction extends ActionSupport implements Serializable{
 

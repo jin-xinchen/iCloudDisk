@@ -1,6 +1,6 @@
-package cn.zju.dao.mapper;
+package zhning.dao.mapper;
 
-import cn.zju.dao.po.User;
+import zhning.dao.po.User;
 
 public interface UserMapper {
 	
